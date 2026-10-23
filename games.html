@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocky Reborn | Experiences</title>
+  <link rel="icon" type="image/png" href="images/rocky-favicon.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: white;
+    }
+
+    /* Header */
+    header {
+      background-color: rgba(0,0,0,0.8);
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-list li {
+      margin: 0 15px;
+    }
+
+    .nav-list a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .nav-list a:hover {
+      color: #0284d4;
+      text-decoration: underline;
+    }
+
+    /* Banner */
+    .banner {
+      position: relative;
+      margin-top: 50px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 400px; /* slightly bigger */
+      object-fit: cover;
+      display: block;
+    }
+
+    .banner .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55); /* darker overlay */
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      z-index: 1;
+    }
+
+    /* Info text */
+    .game-info {
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .game-info a {
+      color: #FFFFFF;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .red { color: red; font-weight: bold; }
+    .blue { color: #1e90ff; font-weight: bold; }
+    .green { color: #28a745; font-weight: bold; }
+    .white { color: #FFFFFF; font-weight: bold; }
+
+    /* Search Bar */
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+      border-radius: 5px;
+      border: none;
+      text-align: center;
+    }
+
+    /* Game Grid */
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      padding: 20px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .game-card {
+      background: #222;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+      height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+      background: #333;
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .game-card p {
+      margin: 8px 0 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gxmes.html">Experiences</a></li>
+      <li><a href="discord.html">Onsite Discord???? (Maybe)</a></li>
+      <li><a href="new-ideas.html">New Ideas</a></li>
+      <li><a href="report-problem.html">Report a Problem</a></li>
+      <li><a href="unc.html">Uncle Davis Fan Page</a></li>
+      <li><a href="unc.html">We Are IR</a></li>
+      <li><a href="about-rocky.html">About Rocky</a></li>
+    </ul>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="images/real-rocky-water.gif" alt="Rocky Water">
+    <div class="overlay"></div>
+    <div class="banner-text">Gxmes/Experiences/Juegos</div>
+  </div>
+
+  <!-- Info -->
+  <div class="game-info">
+    <p>
+      Here are some gxmes. (Most gxmes shouldn't be blocked on school devices, some gxmes might take a bit to load.)  
+      If a gxme doesn't work please report it on the <a href="https://rockysitetest.github.io/rockyreborn/report-problem.html" class="blue" target="_blank">Report An Issue</a> Page;  
+      For gxme ideas submit them on the <a href="https://rockysitetest.github.io/rockyreborn/new-ideas.html" class="blue" target="_blank">New Ideas</a> page. 🤩
+    </p>
+    <p>
+      <span class="red">RED NAMES</span> = Blocked on school devices.  
+      <span class="blue">BLUE NAME</span> = Not the real game but similar.  
+      <span class="green">GREEN NAME</span> = Proxied game 🥵🥶
+    </p>
+  </div>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search experiences..." id="gameSearch">
+  </div>
+
+  <!-- Game Grid -->
+  <div class="game-grid" id="gameGrid">
+    <a href="https://rockysitetest.gitlab.io/SnowRider3D/" class="game-card" target="_blank">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGheziMR520pBecx3YEHR9eAQDpJz54t-Gh5DEWUvEw&s=10" alt="Snow Rider 3D">
+      <p class="white">Snow Rider 3D</p>
+    </a>
+    <a href="https://rockysitetest.gitlab.io/A-Small-WC" class="game-card" target="_blank">
+      <img src="https://asmallworldcup.bitbucket.io/img/a-small-world-cup.png" alt="Cookie Clicker">
+      <p class="white">A Small World Cupr</p>
+    </a>
+    <a href="https://rockysitetest.gitlab.io/Rocky-MC" class="game-card" target="_blank">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr4WshlkXQ9zz0eRim9PEO8FeEzqd_QKQsnSzv0zhG2Q&s=10" alt="Wordle">
+      <p class="white">Minecraft</p>
+    </a>
+    <a href="https://rockysitetest.gitlab.io/rocky-gunspin" class="game-card" target="_blank">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlLC8xoxIatpk9ZK11RbnKakdMnoyfFYDQVniA7IXdvQ&s" alt="Word in progress">
+      <p class="white">GunSpin</p>
+    </a>
+    <a href="https://rockysitetest.github.io/geometry-dash" class="game-card" target="_blank">
+      <img src="https://static.wikia.nocookie.net/b213ondiscord/images/a/a6/Geometrydash.png/revision/latest/thumbnail/width/360/height/450?cb=20200721125515" alt="Game 5">
+      <p class="white">Geometry Dash</p>
+    </a>
+    <a href="work-in-progress.html" class="game-card" target="_blank">
+      <img src="https://cmsv2-assets.apptegy.net/uploads/33094/logo/36303/sellbyillems_logo_template_300.png" alt="Game 6">
+      <p class="white">Unc Davis Fan Game (Coming Soon)</p>
+    </a>
+  </div>
+
+  <script>
+    // Real-time search
+    const searchInput = document.getElementById('gameSearch');
+    const gameGrid = document.getElementById('gameGrid');
+    const games = gameGrid.getElementsByClassName('game-card');
+
+    searchInput.addEventListener('input', function() {
+      const filter = searchInput.value.toLowerCase();
+      Array.from(games).forEach(function(game) {
+        const name = game.querySelector('p').textContent.toLowerCase();
+        game.style.display = name.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
